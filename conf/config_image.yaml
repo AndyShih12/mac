@@ -1,0 +1,32 @@
+hydra:
+  run:
+    dir: ./outputs/${now:%Y-%m-%d}/${now:%H-%M-%S}
+
+local_rank: 0
+world_size: 1
+
+run: 0
+dataset:
+data_dir: ./data/datasets/
+model_dir: ./models/
+log_dir: ./logs/
+
+batch_size: 24
+n_epochs: 3001
+lr: 1e-4
+
+mask:
+  strategy: none
+  order: random
+  mixture: False
+  normalize_cardinality: False
+
+
+mode: train
+arch: ARDM
+weave_attn: True
+
+loadpath:
+
+defaults:
+  - override hydra/job_logging: custom
