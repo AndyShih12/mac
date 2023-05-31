@@ -16,6 +16,8 @@ Any-Order Autoregressive Models (AO-ARMs) are a powerful model family that can c
 
 We introduce **MAC: Mask-Tuned Arbitrary Conditional Models**, which improve AO-ARMs by training on a smaller set of univariate conditionals while still maintaining support for efficient arbitrary conditional and marginal inference. In short, MAC improves model performance without sacrificing tractability.
 
+![](./poster.png)
+
 --------------------
 
 ## Installation
