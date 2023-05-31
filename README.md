@@ -44,3 +44,18 @@ python image_main.py dataset=IMAGENET32 mask.strategy=marginal mask.order=spaced
 
 python lang_main.py dataset=TEXT8 mask.strategy=marginal mask.order=spaced mask.normalize_cardinality=True batch_size=180
 ```
+
+## Citation
+```
+"Training and Inference on Any-Order Autoregressive Models the Right Way"
+Andy Shih, Dorsa Sadigh, Stefano Ermon
+In Proceedings of the 36th Conference on Neural Information Processing Systems (NeurIPS), 2022
+
+@inproceedings{shih2022aoarm,
+  author    = {Andy Shih and Dorsa Sadigh and Stefano Ermon},
+  title     = {Training and Inference on Any-Order Autoregressive Models the Right Way},
+  booktitle = {Advances in Neural Information Processing Systems 35 (NeurIPS)},
+  month     = {december},
+  year      = {2022},
+}
+```
